@@ -27,8 +27,7 @@ WKS: Describes a well-known service.
 |-|-|-|-|
 |Windows|√|x||
 |Linux|√|√|都要安装bind-utils|
-|总信息|简单|详细|dig显示type,ttl等| 
-|资料<td colspan="3">https://www.isc.org/bind/<br>https://downloads.isc.org/isc/bind9/9.18.13/doc/arm/Bv9ARM.pdf|
+|总信息|简单|详细|dig显示type,ttl等<tr><td>资料</td><td colspan="3">https://www.isc.org/bind/<br>https://downloads.isc.org/isc/bind9/9.18.13/doc/arm/Bv9ARM.pdf</td></tr>
 
 # nslookup
 * 参考 https://learn.microsoft.com/zh-cn/windows-server/administration/windows-commands/nslookup-server?source=recommendations
