@@ -15,7 +15,7 @@ curl https://raw.githubusercontent.com/stayor/git-gui-zh/master/zh_cn.msg > zh_c
 
 ## git clone git
 ```
-git clone git@github.com:zi-an/soft
+git clone --single-branch master git@github.com:zi-an/soft
 ```
 
 ## git config
@@ -25,3 +25,8 @@ git config --global user.name zian
 git config --global gui.encoding utf-8
 git config --global -l
 ```
+
+## github
+* 如果git版本太旧会无法更新,需要更新软件
+* 一个密钥只能一个用户用,一个密钥给多个用户用会导致之前的用户密钥全部失效,密钥只留给最后一个用户
+
