@@ -8,10 +8,12 @@
     <servers></servers>
     <mirrors>
         <mirror>
-            <id>aliyunmaven</id>
+            <id>guonei</id>
             <mirrorOf>*</mirrorOf>
-            <name>aliyun maven</name>
-            <url>https://maven.aliyun.com/repository/public</url>
+            <name>guonei maven</name>
+            <!--<url>https://maven.aliyun.com/repository/public</url>-->
+			<!--原本阿里还挺好用的,现在速度太慢了-->
+			<url>https://repo.maven.apache.org/maven2/</url>
         </mirror>
     </mirrors>
     <profiles>

@@ -7,10 +7,22 @@ D:
 │   ├── arthas
 │   ├── europa
 │   ├── idea
+│   ├── jdk
+│   ├── jmeter
 │   ├── mobaxterm
-│   └── nginx
+│   ├── nginx
+│   ├── sdk
+│   ├── studio
+│   │   https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.1.3.0/android-studio-ide-201.7199119-windows.zip
+│   │   此版本能使用idea2020.1的汉化包
+│   └── v2rayn
+│       https://github.com/2dust/v2rayN/releases/download/6.21/v2rayN-With-Core.zip
+│       6.21之后支持深色模式,需额外安装.net6.0,建议使用6.21之后版本
 └── workspaces
     ├── .tmp
+    ├── europa
+    ├── idea
+    ├── maven
     └── notepad
 ```
 
@@ -22,6 +34,9 @@ List
 │   https://github.com/alibaba/arthas/releases
 ├── europa
 │   eclipse3.2
+├── git
+│   https://github.com/git-for-windows/git/releases/download/v2.40.0.windows.1/Git-2.40.0-64-bit.exe
+│	经常需要更新版本,不然git会连不上没有权限
 ├── idea
 │   https://download.jetbrains.com/idea/ideaIU-2020.1.1.win.zip
 ├── jdk
@@ -29,11 +44,11 @@ List
 ├── ltsc 2021
 │   ed2k://|file|LTSC_2021_X64.ISO|5044211712|1555B7DCA052B5958EE68DB58A42408D|/
 ├── mobaxterm
-│   https://download.mobatek.net/2222022102210348/MobaXterm_Installer_v22.2.zip
+│   https://download.mobatek.net/2312023031823706/MobaXterm_Portable_v23.1.zip
 ├── netspeedmonitor
 │   [.\soft\netspeedmonitor_2_5_4_0_x64_setup.msi]
 ├── nginx
-│   https://nginx.org/download/nginx-1.22.1.zip
+│   https://nginx.org/download/nginx-1.24.0.zip
 └── notepad
     https://github.com/notepad-plus-plus/notepad-plus-plus/releases
 ```
