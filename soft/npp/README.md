@@ -55,6 +55,7 @@ exit
 ```
 
 ### NppMarkdown Panel
-* 下载NppMarkdownPanel.css,已优化的深色模式css,放在NppMarkdownPanel插件文件夹内
+* ~~下载NppMarkdownPanel.css,已优化的深色模式css,放在NppMarkdownPanel插件文件夹内~~
 
-插件->NppMarkdownPanel->Edit Setting->CSS file(选择NppMarkdownPanel.css)(大小看屏幕)
+ ~~插件->NppMarkdownPanel->Edit Setting->CSS file(选择NppMarkdownPanel.css)(大小看屏幕)~~
+* 新版已自带深色模式,调节大小就可以

@@ -16,3 +16,6 @@
 "C:\Program Files\Google\Chrome\Application\chrome.exe" --disk-cache-dir="Z:/Temp/"
 ```
 ![chrome与edge](./chrome.jpg)
+
+## mobaxterm缓存设置
+![](./mobaxterm.jpg)
