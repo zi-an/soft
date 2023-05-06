@@ -1,69 +1,82 @@
 <!DOCTYPE html>
 <html lang="zh">
-<head>
+  
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="Cache-Control" content="max-age=7200" />
     <meta http-equiv="Expires" content="Mon, 20 Jul 2009 23:00:00 GMT" />
     <title>目录</title>
     <!--<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
-	<link rel="stylesheet" href="./bootstrap.min.css">
-    <script src="./jquery.min.js"></script>
-</head>
-
-<body style="font-size: 39px">
-<div class="panel panel-default">
-    <table class="table" id="load">
-    </table>
-</div>
-</body>
-<script type="text/javascript">
-    var from = "/";
-    $(document).ready(function () {
-        //获取页面链接参数
-        from = window.location.href;
-        from = from.substr(from.indexOf("=") + 1, from.length);
-        if (from.length == window.location.href.length) from = "/";
-        //alert(from);
-        loadJson("./json" + from);
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <script src="./jquery.min.js">
+    </script>
+  </head>
+  
+  <body style="font-size: 39px">
+    <div class="panel panel-default">
+      <table class="table" id="load">
+      </table>
+    </div>
+  </body>
+  <script type="text/javascript">var from = "/";
+    $(document).ready(function() {
+      //获取页面链接参数
+      from = window.location.href;
+      from = from.substr(from.indexOf("=") + 1, from.length);
+      if (from.length == window.location.href.length) from = "/";
+      //alert(from);
+      loadJson("./json" + from);
     })
 
     function loadJson(baseUrl) {
-        $.getJSON(baseUrl, function (data) {
-            let result = '<tr><th style="width: 70%">名称</th><th style="width: 30%">时间</th></tr>';
-            for (let i = 0; i < data.length; i++) {
-                result += '<tr>';
-                //result += '<td>' + data[i].name + '</td>';
-                if (data[i].type == 'directory') {
-                    let url = "./?from=" + from + '/' + data[i].name;
-                    url = url.replace("\/\/", "\/");
-                    //result += '<td><a onclick="loadJson(\'' + url + '\')">' + data[i].name + '(目录)</a></td>';
-                    //重新加载,已放弃
-                    result += '<td><a  href="' + url + '">' + data[i].name + '(目录)</a></td>';
-                    //带参跳转,可返回
-                } else {
-                    let url = baseUrl + '/' + data[i].name;
-                    //url = url.replace("/json/", "/");
-                    result += '<td><a href="' + url + '">' + data[i].name + '</a></td>';
-                }
-                result += '<td>' + dateFormat(data[i].mtime) + '</td>';
-                result += '</tr>'
-            }
-            $('#load').append(result);
-        });
+      $.getJSON(baseUrl,
+      function(data) {
+        let result = '<tr><th style="width: 70%">名称</th><th style="width: 30%">时间</th></tr>';
+        result += '<tr><td><a href=\"./?from=' + parentDirectory(from) + '\">..</a></td><td>----------</td></tr>'
+        for (let i = 0; i < data.length; i++) {
+          result += '<tr>';
+          //result += '<td>' + data[i].name + '</td>';
+          if (data[i].type == 'directory') {
+            let url = "./?from=" + from + '/' + data[i].name;
+            url = url.replace("\/\/", "\/");
+            //result += '<td><a onclick="loadJson(\'' + url + '\')">' + data[i].name + '(目录)</a></td>';
+            //重新加载,已放弃
+            result += '<td><a  href="' + url + '">.\/' + '' + data[i].name + '\/</a></td>';
+            //带参跳转,可返回
+          } else {
+            let url = baseUrl + '/' + data[i].name;
+            //url = url.replace("/json/", "/");
+            result += '<td><a href="' + url + '">' + data[i].name + '</a></td>';
+          }
+          result += '<td>' + dateFormat(data[i].mtime) + '</td>';
+          result += '</tr>'
+        }
+        $('#load').append(result);
+      });
     }
 
     /*返回格式化时间*/
     function dateFormat(time) {
-        let date = new Date(time);
-        let year = date.getFullYear();
-        let month = "0" + date.getMonth();
-        month = month.substr(month.length - 2, 2);
-        let day = "0" + date.getDate();
-        day = day.substr(day.length - 2, 2)
-        return year + "-" + month + "-" + day;
+      let date = new Date(time);
+      let year = date.getFullYear();
+      let month = "0" + (date.getMonth() + 1);
+      month = month.substr(month.length - 2, 2);
+      let day = "0" + date.getDate();
+      day = day.substr(day.length - 2, 2);
+	  return year + "-" + month + "-" + day;
     }
-</script>
+	
+	/* 返回上级目录,若当前为根目录则返回当前*/
+    function parentDirectory(from) {
+      result = from.substr(0, from.lastIndexOf('\/'));
+      if (result.indexOf('\/') != 0) {
+        return "/";
+      } else {
+        return result;
+      }
+    }</script>
+
 </html>
 <!--
  location / {
@@ -77,7 +90,6 @@
             add_header Access-Control-Allow-Headers 'DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization';
   autoindex on;
   autoindex_format json;
-  alias  html/;
-  index  json;
+  alias  z:/;
  }
 -->

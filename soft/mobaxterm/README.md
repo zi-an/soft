@@ -1,5 +1,7 @@
 # mobaxterm使用
 
+# 专业版密钥
+* https://inused.github.io/pages/file/tool/MobaXtermKeygen.html
 # general
 ![](./general.jpg)
 * 设置bash进入的默认目录

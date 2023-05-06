@@ -14,9 +14,12 @@ curl https://raw.githubusercontent.com/stayor/git-gui-zh/master/zh_cn.msg > zh_c
 ```
 
 ## git clone git
+* 只要最新版本 *--depth 1*
+* 只要某个分支 *--single-branch master*
 ```
-git clone --single-branch master git@github.com:zi-an/soft
+git clone --depth 1 --single-branch master git@github.com:zi-an/soft
 ```
+ 
 
 ## git config
 ```
