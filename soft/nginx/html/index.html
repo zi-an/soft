@@ -38,7 +38,7 @@
           result += '<tr>';
           //result += '<td>' + data[i].name + '</td>';
           if (data[i].type == 'directory') {
-            let url = "./?from=" + from + '/' + data[i].name;
+            let url = "./?from=" + from + '/' + data[i].name+'/';
             url = url.replace("\/\/", "\/");
             //result += '<td><a onclick="loadJson(\'' + url + '\')">' + data[i].name + '(目录)</a></td>';
             //重新加载,已放弃

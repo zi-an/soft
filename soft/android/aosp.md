@@ -49,3 +49,24 @@ adb shell settings put global ntp_server ntp.aliyun.com
 > 用usb打开后的wifi调试,可以用旧版的adb连(Centos7的adb是更旧的31版,无法升级,只能用此方法连)
 * https://mirrors.tuna.tsinghua.edu.cn/epel/7/x86_64/Packages/a/android-tools-20130123git98d0789-5.el7.x86_64.rpm
 * rpm -i android-tools-20130123git98d0789-5.el7.x86_64.rpm
+
+## 安卓13 
+* adb pair 192.168.10.14:41857 匹配码
+```
+#查看应用
+adb shell pm list package
+
+adb shell dumpsys package com.android.launcher3
+
+adb -d shell pm grant package android.permission.CAMERA
+```
+ 
+# 小米运动健康 
+* com.mi.health
+* (通知权限)android.service.notification.NotificationListenerService
+* 以下均不可用,别试了
+```
+adb -d shell pm grant com.mi.health android.service.notification.NotificationListenerService
+adb shell appops set --uid com.mi.health android.service.notification.NotificationListenerService allow
+```
+

@@ -23,3 +23,20 @@ hugo server --theme=hugo-book --buildDrafts
 ``` 
 hugo --theme=hugo-book 
 ```
+
+
+```
+git clone --branch=mysite git@github.com:zi-an/zi-an.github.io.git mysite
+```
+
+
+# 80端口测试项目
+```
+hugo server --contentDir=themes/hugo-book/exampleSite/content.en -p=80
+```
+
+content
+>linux 1
+>windows 4
+>java 2
+>tools 3
