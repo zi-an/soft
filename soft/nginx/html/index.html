@@ -12,6 +12,13 @@
 </head>
 
 <body style="font-size: 39px">
+<form action="/post" enctype="multipart/form-data" method="post" style="display: none">
+    <div class="btn-group">
+        <input name="file" type="file" class="btn btn-primary">
+        <input type="submit" class="btn btn-primary">
+    </div>
+</form>
+
 <div class="panel panel-default">
     <table class="table" id="load">
     </table>
@@ -23,9 +30,10 @@
         //获取页面链接参数
         from = window.location.href;
         from = from.substr(from.indexOf("=") + 1, from.length);
-        if (from.length == window.location.href.length) from = '/';
+        if (from.length == window.location.href.length) from = "/";
+        if (from=="/upload/") document.getElementsByTagName("form")[0].style="";
         //alert(from);
-        loadJson('./json' + from);
+        loadJson("./json" + from);
     })
 
     function loadJson(baseUrl) {
@@ -38,11 +46,14 @@
                     //result += '<td>' + data[i].name + '</td>';
                     if (data[i].type == 'directory') {
                         let url = "./?from=" + from + '/' + data[i].name + '/';
-                        url = url.replace("//", "/");
-                        result += '<td><a  href="' + url + '">./' + '' + data[i].name + '/</a></td>';
+                        url = url.replace("\/\/", "\/");
+                        //result += '<td><a onclick="loadJson(\'' + url + '\')">' + data[i].name + '(目录)</a></td>';
+                        //重新加载,已放弃
+                        result += '<td><a  href="' + url + '">.\/' + '' + data[i].name + '\/</a></td>';
                         //带参跳转,可返回
                     } else {
                         let url = baseUrl + data[i].name;
+                        //url = url.replace("/json/", "/");
                         result += '<td><a href="' + url + '">' + data[i].name + '</a></td>';
                     }
                     result += '<td>' + dateFormat(data[i].mtime) + '</td>';
@@ -65,10 +76,10 @@
 
     /* 返回上级目录,若当前为根目录则返回当前*/
     function parentDirectory(from) {
-        let result = from.substr(0, from.lastIndexOf('/'));
-        result = result.substr(0, result.lastIndexOf('/'))+'/';
-        if (result.indexOf('/') != 0) {
-            return '/';
+        let result = from.substr(0, from.lastIndexOf('\/'));
+        result = result.substr(0, result.lastIndexOf('\/')) + '\/';
+        if (result.indexOf('\/') != 0) {
+            return "/";
         } else {
             return result;
         }
