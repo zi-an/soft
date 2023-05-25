@@ -9,3 +9,7 @@
 * [go version](https://dl.google.com/go/go1.16.15.windows-amd64.zip)不能高于16,会无法识别
 * 最后支持XP系统的是32位的[GO 1.10.8](https://golang.google.cn/dl/go1.10.8.windows-386.zip)
 * epel里支持centos的版本是go 18
+
+## 环境变量GOPATH设置
+
+最好设置GOPATH,不然go get会把包下载到用户目录内,不方便编译

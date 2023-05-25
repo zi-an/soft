@@ -12,7 +12,7 @@
 </head>
 
 <body style="font-size: 39px">
-<form action="/post" enctype="multipart/form-data" method="post" style="display: none">
+<form action="/post" enctype="multipart/form-data" method="post">
     <div class="btn-group">
         <input style="position: fixed;top: 0px;left: 0px;" type="file" name="file" placeholder="选中文件">
         <input style="position: fixed;top:0px;right: 0px;" type="submit" value="上传文件">
@@ -30,9 +30,7 @@
         //获取页面链接参数
         from = window.location.href;
         from = from.substr(from.indexOf("=") + 1, from.length);
-        if (from.length == window.location.href.length) from = "/";
-        if (from=="/upload/") document.getElementsByTagName("form")[0].style="";
-        //alert(from);
+        if (from.length == window.location.href.length) location.href = '/?from=/';
         loadJson("./json" + from);
     })
 
