@@ -60,3 +60,4 @@ image.uc.cn
 ##.fastSection-module_b5fb2a3956
 ##img[height="220"]
 ##.footer-module_a1cf9b703a
+ad.xmmnsl.com/*gif
