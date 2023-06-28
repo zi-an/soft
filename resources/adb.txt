@@ -49,3 +49,14 @@ bjm.1vkx.cn/public/1/img/*.gif
 bj.bcebos.com/baidu-rmb-video-cover-1/*.png
 jmmnew.tlxxw.cc/public/3/assets/images/shared/ios/version/favImg.png
 image.uc.cn
+
+
+!ext06-28补丁
+##div[style=" max-width:990px; margin:0 auto;"]
+##.swiper
+##.point.fill.fill1
+##.relateList-module_fd263a9eac
+##.download-module_3d3458c005
+##.fastSection-module_b5fb2a3956
+##img[height="220"]
+##.footer-module_a1cf9b703a
