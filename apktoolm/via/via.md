@@ -11,9 +11,9 @@ vector制作的
 https://juejin.cn/post/6844903459813081096
 
 改三处
-stings修改应用名
+stings修改应用名(./res/values-zh-rCN)
 ic_launcher.xml修改桌面图标
-logo.svg修改首页logo
+logo.svg修改首页logo(./assets)
 
 编辑器https://raw.githubusercontent.com/MegatronKing/SVG-Android/master/svg-vector-applet/bat/svg2vector-applet-1.0.1.jar
 # FBI logo.svg
