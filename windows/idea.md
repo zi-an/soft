@@ -19,7 +19,7 @@
 * https://zhile.io/2021/11/29/ja-netfilter-javaagent-lib.html (教程)
 * https://jetbra.in/s (注册码) 
 * https://bafybeiawsvnhqx5o2aqa37pvq7brlk7vqj2cpty3b5xac655bxbpqbpkq4.ipfs.dweb.link/ (下载地址搜索Download jetbra.zip)
-* 备份：https://github.com/zi-an/soft/blod/windows/idea/jetbra-2023.3.4.zip
+* 备份：https://github.com/zi-an/soft/blob/windows/idea/jetbra-2023.3.4.zip
 
 ## 步骤:
 1. 下载jetbra.zip后解压到固定的磁盘,执行\jetbra\scripts\install-current-user.vbs
