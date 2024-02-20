@@ -23,14 +23,11 @@ git clone --depth 1 --single-branch master git@github.com:zi-an/soft
 
 ## git config
 ```
+git config --global core.autocrlf false
 git config --global user.email zian@zi.an
 git config --global user.name zian
 git config --global gui.encoding utf-8
 git config --global -l
-```
-## 换行LF在windows下的问题
-```
-git config --global core.autocrlf false
 ```
 ## github
 * 如果git版本太旧会无法更新,需要更新软件
