@@ -1,1 +1,1 @@
-https://www.7-zip.org/a/7z2301-x64.exe
+https://www.7-zip.org/a/7z2404-x64.exe
