@@ -90,3 +90,10 @@ slmgr /ato
 
 ## 游戏
 * 侠盗飞车 ftp://202.99.176.43/diannao/x/xiadaolieche_zeds.exe
+
+## win7旧版
+[wps2019计算机等级考试版](https://ncre.neea.edu.cn/html1/report/1507/861-1.htm)
+[cad2020是win7最后支持版本,但cad2021也能用](https://trial2.autodesk.com/NetSWDLD/2021/ACD/9046B381-E756-4D38-A7EF-FAD07F4456E6/SFX/AutoCAD_2021_Simplified_Chinese_Win_64bit_dlm.sfx.exe)
+[cad最后的32位](http://trial2.autodesk.com/NetSWDLD/2019/ACD/281B1051-D3D3-4FCC-A52C-CF750093307C/SFX/AutoCAD_2019_Simplified_Chinese_Win_32bit_dlm.sfx.exe)
+[cad系统支持表](https://www.autodesk.com.cn/support/technical/article/caas/sfdcarticles/sfdcarticles/CHS/System-requirements-for-AutoCAD.html)
+[QQ输入法](https://cdn.qq.ime.sogou.com/QQPinyin_Setup_6.6.6304.400.exe)
