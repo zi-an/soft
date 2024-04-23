@@ -18,6 +18,7 @@
 |电子邮箱|[com.android.email-13.apk](./miui/com.android.email-13.apk)||
 |指南针|[com.miui.compass-9.7.5.apk](./miui/com.miui.compass-9.7.5.apk)||
 |miui桌面|[com.miui.home-4.26.apk](./miui/com.miui.home-4.26.apk)|无字模式,支持miui12|
+|小米音乐|com.miui.player-4.4.apk|QQ音乐版,无广告,可播放已下载文件|
 
 
 ## 大文件上传com.bilibili.app.in-3.10.0.apk
