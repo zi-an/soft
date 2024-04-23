@@ -14,3 +14,5 @@ git add europa.zip
 git commit -m "add europa.zip"
 git push -u origin windows
 ```
+
+* drivergenius.exe 为驱动精灵，在安装好有线/无线网卡驱动后使用
