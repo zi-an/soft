@@ -8,9 +8,10 @@
 |wifianalyzer|[com.vrem.wifianalyzer-3.1.2.apk](./com.vrem.wifianalyzer-3.1.2.apk)|
 |QQ浏览器|[com.tencent.mtt-12.5.0.apk](./com.tencent.mtt-12.5.0.apk)|几乎无广告,但有时不走免流|
 |腾讯地图|[com.tencent.map-9.37.0.apk](./com.tencent.map-9.37.0.apk)|几乎无广告|
-|虎牙直播|[com.huya.kiwi-7.11.35.apk](./com.huya.kiwi-7.11.35.apk)|能网页扫码版|
+|虎牙直播|[com.huya.kiwi-7.11.69.apk](./com.huya.kiwi-7.11.69.apk)|能网页扫码版|
 |github|[com.github.android-1.146.0.apk](./com.github.android-1.146.0.apk)|
 |哔哩哔哩|[com.bilibili.app.in-3.10.0.apk](./com.bilibili.app.in-3.10.0.apk)|支持hyperos的最早版本|
+|哔哩哔哩|[com.bilibili.app.in-3.10.0.apk](./com.bilibili.app.in-3.17.0.apk)|能看评论图的最早版本|
 
 |miui软件|下载|备注|
 |-|-|-|
@@ -18,7 +19,7 @@
 |电子邮箱|[com.android.email-13.apk](./miui/com.android.email-13.apk)||
 |指南针|[com.miui.compass-9.7.5.apk](./miui/com.miui.compass-9.7.5.apk)||
 |miui桌面|[com.miui.home-4.26.apk](./miui/com.miui.home-4.26.apk)|无字模式,支持miui12|
-|小米音乐|com.miui.player-4.4.apk|QQ音乐版,无广告,可播放已下载文件|
+|小米音乐|[com.miui.player-4.4.apk](./miui/com.miui.player-4.4.apk)|QQ音乐版,无广告,可播放已下载文件|
 
 
 ## 大文件上传com.bilibili.app.in-3.10.0.apk
